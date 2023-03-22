@@ -1,0 +1,79 @@
+/*
+------ Tasks Field --------
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.tasks {
+  width: 600px;
+  margin: 40px auto;
+  border: 1px solid #aaa;
+  padding: 10px 30px 30px;
+  background-color: #eee;
+}
+.tasks h3 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.tasks-field_input,
+.tasks-field_pinned,
+.tasks-field_all_tasks {
+  width: 100%;
+  margin: 10px 0 0;
+}
+.tasks-field_input input[type="text"]{
+  outline: none;
+  padding: 10px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+.tasks-field_input input[type="text"]:focus{
+  border: 1px solid #000;
+}
+.task {
+  width: 100%;
+  border: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  margin-top: 7px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.checkbox {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+  border: 1px solid;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.checkbox:checked {
+  background-color: #eee;
+}
+.checkbox:checked::after {
+  content: "\02C5";
+  line-height: 1.4;
+  font-size: 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.checkbox:hover {
+  background-color: #aaa;
+}
+.tasks-error-conteiner {
+  position: relative;
+}
+.error-msg {
+  position: absolute;
+  top: 5px;
+  color: red;
+}

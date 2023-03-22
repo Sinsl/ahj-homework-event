@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pictures {
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 10px auto;
+}
+.form-add-pictures {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+.form-add-pictures label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+  margin-top: 20px;
+
+}
+.form-add-pictures input {
+  width: 60%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+.form-add-pictures input:focus {
+  border: 1px solid #000;
+}
+.label-text {
+  width: 40%;
+  text-align: right;
+}
+.err-container {
+  position: relative;
+  width: 60%;
+  left: 40%;
+  margin-top: 5px;
+}
+.err-msg {
+  position: absolute;
+  color: red;
+}
+.form-add-pictures button {
+  text-align: center;
+  margin: 50px auto 10px;
+  display: block;
+  padding: 5px 10px;
+}
+.images-box {
+  width: 1000px;
+  margin: 30px auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-item {
+  position: relative;
+}
+.image-item_img {
+  height: 150px;
+}
+.image-item_del {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: -5px;
+  right: -5px;
+  background-color: #fff;
+  z-index: 100;
+  border: 1px solid;
+  border-radius: 50%;
+  color: red;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 3px;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
